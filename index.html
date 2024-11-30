@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="calculator.css">
+    <style>
+        
+.cal{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0px;
+}
+
+button{
+    width: 20vw;
+    height: 9vh;
+    box-shadow: 2px 2px 5px #aaaaaa;
+    font-size: 26px;
+}
+
+
+.five button{
+width: 45%;
+
+
+}
+.five button:hover{
+width: 46%;
+}
+
+
+.ansSection{
+    height: 200px;
+    width: 90%;
+    margin: auto;
+    font-size: 0px;
+    margin-top: 10px;
+    
+}
+
+.ansSection p{
+    height: 70px;
+}
+
+h6 button{
+    width: 200px;
+    font-size: 20px;
+    height: 50px;
+}
+h6 button:hover{
+    width: 202px;
+
+}
+.one{
+    margin-top: 0px;
+}
+button:hover{
+    width: 20.3vw;
+}
+.para{
+    font-size: 30px;
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCalc</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+   
+        <div class="cal">        
+            <div class="ansSection">
+                <h6> <button onclick="changedMode()" id="mode">Change mode</button></h6>
+                <p class="para">0</p>
+            </div>
+
+         <div class="btns">
+            <div class="one">  
+                <button onclick="appendToDisplay('7')">7 </button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="clearOne()" id="del">DEL</button>
+            </div>
+
+            <div class="two">  
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('+')">+</button>
+            </div>
+
+            <div class="three">
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('-')">-</button>
+            </div>
+
+            <div class="four"> 
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('/')">/</button>
+                <button onclick="appendToDisplay('*')">x</button>
+            </div>
+
+            <div class="five"> 
+                <button  onclick="clearDisplay()">AC </button>
+                <button onclick="calculate()">=</button>
+                
+            </div>
+         </div>
+        </div>
+   
+</body>
+<script src="calculator.js"></script>
+</html>

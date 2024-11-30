@@ -1,0 +1,100 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+.image{
+    width: 260px;
+    height: 520px;
+
+    margin: auto;
+    background-image: url('phone.jpg');
+    background-size: cover;
+    border-top-left-radius: 38px;
+    margin-top: 20px;
+    border-top-right-radius: 44px;
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+
+.cal{
+    width: 244px;
+    height: 504px;
+    margin-right: 1.6px;
+    background-color:    rgb(201, 7, 7);
+    border-top-left-radius: 39px;
+    border-top-right-radius: 37px;
+    border-bottom-left-radius: 38px;
+    border-bottom-right-radius: 38px;   
+
+}
+
+.one,.two,.three,.four,.five{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 18px;
+
+}
+.one{
+    margin-top: 20px;
+}
+ button{
+    height: 30px;
+    width: 45px;
+    background-color: #333;
+    padding: 2px;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: rgb(102, 108, 102) ;
+    width: 46px;
+}
+.five button{
+width: 106px;
+padding: 3px;
+margin-top: 3px;
+}
+.ansSection{
+    height: 160px;
+    width: 90%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+flex-direction: column;
+}
+
+h6 button{
+    width: 65px;
+    font-size: 9px;
+}
+h6 button:hover{
+    width: 66px;
+}
+.ansSection p{
+    width: 95%;
+    background-color: #a8FaF8;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    height: 40px;
+    text-align: right;
+    padding: 3px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
